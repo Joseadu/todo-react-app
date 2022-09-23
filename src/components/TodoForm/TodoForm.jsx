@@ -12,6 +12,7 @@ export function TodoForm(props) {
     const onAddTodo = (event) => {
         event.preventDefault();
         props.addTodo(newTodoValue);
+        props.setOpenModal(false);
     }
 
     const onCloseTodoForm = () => {
@@ -27,7 +28,7 @@ export function TodoForm(props) {
         </div>
 
         <div className="form-group mt-3">
-            <button type="submit" className="btn btn-primary mt-3">Submit</button>
+            <button type="submit" className="btn btn-primary mt-3">Añadir</button>
             <button onClick={onCloseTodoForm} type="button" className="btn btn-outline-primary mt-3 mx-3">Cancel</button>
         </div>
     </form>
