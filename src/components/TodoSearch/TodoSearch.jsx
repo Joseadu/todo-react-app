@@ -1,20 +1,17 @@
 import React from 'react'
 
-export function TodoSearch(props) {
-  const [searchValue, setSearchValue] = React.useState('');
+export function TodoSearch({searchValue, setSearchValue}) {
 
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
     console.log(event.target.value)
   }
 
-  return [
-
+  return (
     <input
-        placeholder="Cebolla"
+        placeholder="Buscar TODO"
         value={searchValue}
         onChange={onSearchValueChange}
-    />,
-    <p>{searchValue}</p>
-  ];
+    />
+  );
 }
