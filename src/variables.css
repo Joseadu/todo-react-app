@@ -1,0 +1,30 @@
+@import './fonts.css';
+
+:root {
+
+    /* COLORS */
+
+    --white: #FDFBF7;
+    --light-color: #FAF1E2;
+    --third-color: #71357E;
+    --light-grey: #EFEFEF;
+
+
+    --text-main-color: #371340;
+
+
+
+    /* FONTS */
+
+    --font-primary: 'Nunito', sans-serif;
+    --font-secondary: 'Nunito', sans-serif;
+
+    --font-desktop-title: 36px;
+    --font-desktop-text: 18px;
+    --font-desktop-small: 14px;
+
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semibold: 500;
+    --font-bold: 700;
+}

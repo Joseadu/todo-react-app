@@ -1,0 +1,61 @@
+@import '../../App.css';
+
+.todo-item {
+    width: calc(100% - 40px);
+    margin: 0px;
+
+    position: relative;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    border: transparent;
+    border-radius: 10px;
+
+    background-color: var(--white);
+}
+
+.todo-item {
+    margin-top: 15px;
+}
+
+.todo-item-complete {
+    margin-bottom: -3px;
+}
+
+.todo-item-complete:hover {
+    cursor: pointer;
+}
+
+.todo-item-text {
+    margin-left: 10px !important;
+
+    font-family: var(--font-secondary);
+    font-weight: var(--font-regular);
+    font-size: var(--font-desktop-text);
+}
+
+.p-completed {
+    text-decoration: line-through;
+}
+
+.p-uncompleted {
+    text-decoration: none;
+}
+
+.todo-item-delete {
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    right: 35px;
+
+    cursor: pointer;
+}
+
+.todo-item-delete:hover {
+    color: #cb3234;
+}

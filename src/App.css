@@ -1,0 +1,89 @@
+@import './variables.css';
+@import './fonts.css';
+
+:root, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    
+    padding: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-color);
+}
+
+#section {
+    height: 700px;
+    position: relative;
+    display: flex;
+}
+
+h2 {
+    font-family: var(--font-primary);
+}
+
+h3 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-regular);
+    font-size: var(--font-desktop-text);
+}
+
+.left-container {
+    width: 500px;
+    padding: 50px;
+    background-color: var(--white);
+    background-image: url('./assets/imgs/tasks.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 400px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.4);
+}
+
+.right-container {
+    width: 600px;
+    padding: 50px 25px 0 75px;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-container h2 {
+    text-align: center;
+}
+
+.todo-list {
+    width: 100%;
+    margin-top: 20px;
+}
+
+h2 {
+    color: var(--text-main-color);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+label {
+    color: var(--text-main-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0 !important;
+}
+
