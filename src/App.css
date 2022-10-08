@@ -1,87 +1,110 @@
-@import './variables.css';
-@import './fonts.css';
+@import "./variables.css";
+@import "./fonts.css";
 
-:root, body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+:root,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #main {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: var(--light-color);
+  background-color: var(--light-color);
 }
 
 #section {
-    height: 700px;
-    display: flex;
-    flex-direction: row;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
 }
 
 h2 {
-    font-family: var(--font-primary);
+  font-size: var(--font-desktop-title);
+  font-family: var(--font-primary);
+  color: var(--text-main-color);
+  font-weight: var(--font-bold);
+  margin-top: 0 !important;
 }
 
 h3 {
-    font-family: var(--font-secondary);
-    font-weight: var(--font-regular);
-    font-size: var(--font-desktop-text);
+  font-family: var(--font-secondary);
+  font-weight: var(--font-regular);
+  font-size: var(--font-desktop-text);
 }
 
 .left-container {
-    width: 500px;
-    padding: 50px;
-    background-color: var(--white);
-    background-image: url('./assets/imgs/tasks.svg');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 400px;
+  width: 400px;
+  padding: 50px;
+  background-color: var(--white);
+  background-image: url("./assets/imgs/tasks.svg");
+  background-position: bottom right 50px;
+  background-repeat: no-repeat;
+  background-size: 300px;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    box-shadow: 0px 0px 18px -2px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 18px -2px rgba(0, 0, 0, 0.4);
 }
 
 .right-container {
-    width: 600px;
-    padding: 50px 25px 0 75px;
-    overflow-y: scroll;
+  width: 500px;
+  padding: 50px 25px 0 75px;
+  overflow-y: scroll;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .right-container h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .todo-list {
-    width: 100%;
-    margin-top: 20px;
-}
-
-h2 {
-    color: var(--text-main-color);
-    font-size: 36px;
-    font-weight: 700;
+  width: 100%;
+  margin-top: 20px;
 }
 
 label {
-    color: var(--text-main-color);
-    font-size: 18px;
-    font-weight: 500;
+  color: var(--text-main-color);
+  font-size: 18px;
+  font-weight: 500;
 }
 
 p {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
+@media (max-width: 1200px) {
+    #section {
+        height: 500px;
+    }
+
+  h2 {
+    font-size: var(--font-mobile-title);
+  }
+
+  .left-container {
+    width: 300px;
+    background-size: 250px;
+  }
+
+  .right-container {
+    width: 400px;
+    padding: 50px 25px 0 75px;
+    overflow-y: scroll;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

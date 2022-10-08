@@ -28,6 +28,7 @@ export function TodoItem(props) {
   return (
     <div className='todo-item'>
       <span><FaRegCheckCircle className='todo-item-complete' onClick={props.onComplete} color={props.completed ? '#28A745' : 'lightgray'}/></span>
+      
       <p className={`todo-item-text p-completed ${!props.completed && 'p-uncompleted'}`}>{props.text}</p>
 
             

@@ -22,6 +22,10 @@
     --font-desktop-title: 36px;
     --font-desktop-text: 18px;
     --font-desktop-small: 14px;
+    
+    --font-mobile-title: 28px;
+    --font-mobile-text: 16px;
+    --font-mobile-small: 14px;
 
     --font-light: 300;
     --font-regular: 400;
