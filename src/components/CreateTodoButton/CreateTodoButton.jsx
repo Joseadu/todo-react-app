@@ -13,7 +13,7 @@ export function CreateTodoButton(props) {
         className='btn rounded-circle btn-primary mt-3 mi-boton'
         onClick={onClickButton}
         >
-          +
+          Add task
     </button>
   )
 }

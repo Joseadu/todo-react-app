@@ -1,2 +1,7 @@
 @import '../../App.css';
 
+.mi-boton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}

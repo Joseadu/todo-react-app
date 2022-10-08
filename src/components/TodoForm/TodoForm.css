@@ -71,3 +71,17 @@
     background-color: #9948AB;
     border: 2px solid var(--third-color);
 }
+
+@media (max-width: 767px) {
+    .todo-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-form-group-textarea {
+        width: calc(100% - 30px);
+        height: 15px;
+    
+        margin-top: 10px;
+        padding: 18px;
+    }
+}

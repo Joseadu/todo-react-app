@@ -59,3 +59,9 @@
 .todo-item-delete:hover {
     color: #cb3234;
 }
+
+@media (max-width: 767px) {
+    .todo-item {
+        width: 100%;
+    }
+}

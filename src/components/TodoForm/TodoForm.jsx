@@ -24,7 +24,7 @@ export function TodoForm(props) {
     <form onSubmit={onAddTodo} className='todo-form'>
         <div classNameName="todo-form-group">
             <p>Task name</p>
-            <textarea value={newTodoValue} onChange={onChange} type="text" className="todo-form-group-textarea" placeholder="Hacer la compra..." />
+            <input value={newTodoValue} onChange={onChange} type="text" className="todo-form-group-textarea" placeholder="Hacer la compra..." />
         </div>
 
         <div className="todo-form-button">

@@ -7,7 +7,7 @@ import {TodoSearch} from './components/TodoSearch/TodoSearch';
 import {TodoList} from './components/TodoList/TodoList';
 import {TodoItem} from './components/TodoItem/TodoItem';
 // import {CreateTodoButton} from './components/CreateTodoButton/CreateTodoButton';
-import {Modal} from './components/Modal/Modal';
+// import {Modal} from './components/Modal/Modal';
 import {TodoForm} from './components/TodoForm/TodoForm';
 
 // import { FaRegCheckCircle } from "react-icons/fa";
@@ -109,7 +109,7 @@ function App() {
 
   const [searchValue, setSearchValue] = React.useState('');
 
-  const [openModal, setOpenModal] = React.useState(false);
+  // const [openModal, setOpenModal] = React.useState(false);
 
 
 
@@ -215,7 +215,7 @@ function App() {
 
           <TodoForm
             addTodo={addTodo}
-            setOpenModal={setOpenModal}
+            // setOpenModal={setOpenModal}
           >
 
           </TodoForm>
@@ -252,18 +252,18 @@ function App() {
       {/* <CreateTodoButton
             setOpenModal={setOpenModal}
           >
-          </CreateTodoButton> */}
+          </CreateTodoButton>
           
           {!!openModal && (
           <Modal >
-            {/* <TodoForm
+            <TodoForm
               addTodo={addTodo}
               setOpenModal={setOpenModal}
             >
 
-            </TodoForm> */}
+            </TodoForm>
           </Modal>
-          )}
+          )} */}
     </main>
   );
 };
