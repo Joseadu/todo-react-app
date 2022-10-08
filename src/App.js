@@ -246,8 +246,10 @@ function App() {
               />
             ))}
           </TodoList>
-          
-          {/* <CreateTodoButton
+        </div>
+      </section>
+
+      {/* <CreateTodoButton
             setOpenModal={setOpenModal}
           >
           </CreateTodoButton> */}
@@ -262,8 +264,6 @@ function App() {
             </TodoForm> */}
           </Modal>
           )}
-        </div>
-      </section>
     </main>
   );
 };
