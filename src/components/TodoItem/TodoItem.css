@@ -1,7 +1,7 @@
 @import '../../App.css';
 
 .todo-item {
-    width: calc(100% - 40px);
+    width: 100%;
     margin: 0px;
     margin-top: 15px;
     padding: 15px;

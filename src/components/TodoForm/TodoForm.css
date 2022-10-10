@@ -19,7 +19,7 @@
 }
 
 .todo-form-group-textarea {
-    width: calc(100% - 40px);
+    width: 100%;
     height: 15px;
 
     margin-top: 10px;
@@ -78,7 +78,7 @@
         flex-direction: column;
     }
     .todo-form-group-textarea {
-        width: calc(100% - 30px);
+        width: 100%;
         height: 15px;
     
         margin-top: 10px;
